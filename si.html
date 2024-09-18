@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side Panel Navigation</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles for the side panel */
+    .side-panel {
+      background-color: #f8f9fa;
+      padding: 20px;
+      height: 100vh; /* Full height */
+      position: sticky;
+      top: 0;
+    }
+    /* For smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Side Navigation -->
+    <nav class="col-md-3 col-lg-2 d-md-block bg-light side-panel">
+      <h4>Topics</h4>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#topic1">Topic 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#topic2">Topic 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#topic3">Topic 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#topic4">Topic 4</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="col-md-9 col-lg-10">
+      <section id="topic1" style="padding-top: 70px;">
+        <h2>Topic 1</h2>
+        <p>Content for topic 1 goes here.</p>
+      </section>
+      <hr>
+      <section id="topic2" style="padding-top: 70px;">
+        <h2>Topic 2</h2>
+        <p>Content for topic 2 goes here.</p>
+      </section>
+      <hr>
+      <section id="topic3" style="padding-top: 70px;">
+        <h2>Topic 3</h2>
+        <p>Content for topic 3 goes here.</p>
+      </section>
+      <hr>
+      <section id="topic4" style="padding-top: 70px;">
+        <h2>Topic 4</h2>
+        <p>Content for topic 4 goes here.</p>
+      </section>
+    </main>
+  </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

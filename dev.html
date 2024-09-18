@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+    <style>
+      body {
+        background-image: url('img/blue.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .navbar-nav {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .navbar-nav .nav-item {
+        margin-right: 3rem;
+      }
+      .h2-header {
+        text-align: center;
+      }
+      .clr-gld {
+        color: blue;
+      }
+      .card {
+        display: flex;
+        gap: 20px;
+        border-radius: 20px;
+        text-align: center;
+      }
+      .container {
+        max-width: 100%;
+        padding: 0 15px;
+      }
+      .card-img-top {
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+      }
+      .card-body {
+        padding: 20px;
+      }
+      .card-title {
+        margin: 20px 0;
+      }
+      .footer {
+        background-color: grey;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .footer a {
+        color: white;
+        text-decoration: none;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"> 
+        <div class="container-fluid">
+          <a class="navbar-brand" href="E:\TaPay app\Tapay.in.html"><img src="img/t.png" style="width:200px;height:40px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="E:\TaPay app\consumer1.html">Consumer</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Merchant</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="E:\TaPay app\paymentgateway.html">Payment Gateway</a></li>
+                  <li><a class="dropdown-item" href="#">SaaS Operations</a></li>
+                  <li><a class="dropdown-item" href="#">Wallet services</a></li>
+                  <li><a class="dropdown-item" href="#">Security</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link active" aria-current="page" href="E:\TaPay app\dev.html">Developer</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="E:\TaPay app\help.html">Help</a></li>
+              <li style="color: aliceblue;"><a class="nav-link active" href="E:\TaPay app\contactus.html">Contact us</a></li>
+            </ul>
+            <div class="search-container">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <a href="#" class="btn btn-primary">Search</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </nav>
+    
+    <br>
+    <div class="container">
+      <div class="row mb-xl">
+        <div class="col-md-12 center">
+          <br><br><br><br>
+          <h2 class="h2-header">Easy Integration, Great Support...</h2>
+          <div class="divider divider-primary divider-xsml divider-small-center">
+            <hr>
+          </div>
+          <hr class="invisible">
+        </div>
+      </div>
+      <br><br><br>
+
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            
+            <div class="card-body">
+              <h5 class="card-title"><span class="clr-gld">API</span> Documentation</h5>
+              <p class="card-text">Our comprehensive documentation will help you integrate your site with TraknPay.</p>
+              <a href="https://bitbucket.org/OmniwareIntegrationTeam/traknpay_integrations_plugins/downloads/TraknPay%20Integration%20Guide.pdf" class="btn btn-primary">Download Documentation</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            
+            <div class="card-body">
+              <h5 class="card-title"><span class="clr-gld">Plugin</span> Integration</h5>
+              <p class="card-text">Have a shopping cart already? Download our plugins for your E-Commerce Platform.</p>
+              <a href="#plugins" class="btn btn-primary">Download Plugin</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            
+            <div class="card-body">
+              <h5 class="card-title"><span class="clr-gld">FAQ</span></h5>
+              <p class="card-text">Have a question on integration? View our Developer FAQ for answers.</p>
+              <a href="E:\TaPay app\help.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <p style="text-align: center;">Want a package for your favorite language? <a href="E:\TaPay app\help.html">Let us know</a> and we'll see if we can make that happen.</p>
+      <br><br><br><br>
+      <div class="container">
+        <div class="row mb-xl">
+          <div class="col-md-12 center">
+            <br><br><br><br>
+            <h2 class="h2-header">TraknPay<span class="clr-gld"> Plugin</span> Integration</h2>
+            <div class="divider divider-primary divider-xsml divider-small-center">
+              <hr>
+            </div>
+            <hr class="invisible">
+          </div>
+        </div>
+        <p style="text-align: center;">Want a package for your favorite language? <a href="E:\TaPay app\help.html">Let us know</a> and we'll see if we can make that happen.</p>
+        <br><br><br><br>
+        <div class="row mt-lg center">
+            <div class="col-md-4 img-responsive center ">
+                <div class="col-md-4"> </div>
+                <div class="col-md-8 boxed">
+                    <div class="row">
+                        <div class=" feature-box feature-box-style-4 center">
+                            <img class="mb-xs" height="100px" width ="100px" src="img/Drupal.png" alt="Drupal">									 
+                             <h4 class="  font-weight-normal "> Drupal </h4>
+                            <p class="text-md font-weight-semibold"> <a href="https://bitbucket.org/OmniwareIntegrationTeam/traknpay_integrations_plugins/downloads/TraknPay_v2_Drupal7.zip" class="btn btn-primary">Download</a></p>
+                        </div>
+                    </div>
+                </div>
+                 
+            </div>
+          
+        <div class="col-md-4 img-responsive center ">
+            <div class="col-md-2"> </div>
+            <div class="col-md-8 boxed">
+                <div class="row">
+                    <div class=" feature-box feature-box-style-4 center">
+                        <img class="mb-xs" height="100px" width ="100px" src="img/nop commerce.png" alt="Nop Commerce">									 
+                         <h4 class="  font-weight-normal "> nopCommerce </h4>
+                        <p class="text-md font-weight-semibold"><a href="https://bitbucket.org/OmniwareIntegrationTeam/traknpay_integrations_plugins/downloads/TraknPay_v2_NopCommerce_v3.7.zip" class="btn btn-primary">Download</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"> </div>
+        </div> 
+        <div class="col-md-4 img-responsive center ">
+                
+                <div class="col-md-8 boxed">
+                    <div class="row">
+                        <div class=" feature-box feature-box-style-4 center">
+                            
+                            <img class="mb-xs" height="100px" width ="100px" src="E:\TaPay app\img\OpenCart.png" alt="OpenCart">		 
+                             <h4 class=""> OpenCart </h4>
+
+                            
+                            <div class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 Download
+                                </a>
+                                <div class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="https://bitbucket.org/OmniwareIntegrationTeam/traknpay_integrations_plugins/downloads/TraknPay_v2_Opencart_v3.0.0.0.zip">V-3.0.0.0</a></li>
+                                 <li><a class="dropdown-item" href="https://bitbucket.org/OmniwareIntegrationTeam/traknpay_integrations_plugins/downloads/TraknPay_v2_Opencart_v2.3.0.2.zip">V-2.3.0.2</a></li>
+                                 <li><a class="dropdown-item" href="https://bitbucket.org/OmniwareIntegrationTeam/traknpay_integrations_plugins/downloads/TraknPay_v2_Opencart_v2.x.zip">V-2.x</a></li>
+                                 <li><a class="dropdown-item" href="https://bitbucket.org/OmniwareIntegrationTeam/traknpay_integrations_plugins/downloads/TraknPay_v2_Opencart_v1.5.x.zip">V-1.5.x</a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br><br><br><br>
+
+      
+      <section class="section section-default section-with-mockup mb-none">
+        <div class="container">
+          <div class="row mt-lg">
+            <div class="col-md-12 center">
+              <h2 class="font-weight-normal h2-header">TraknPay <span class="clr-gld"> Mobile SDK's</span></h2>
+              <div class="divider divider-primary divider-xlarge divider-small-center mb-xl">
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container d-flex justify-content-center mt-5">
+        <div class="row justify-content-center">
+           <i style="text-align: center;">Easy To Use Mobile SDKs for Your Mobile App</i>
+           <br><br><br>
+           <div class="col-md-4 mb-4">
+             <div class="card custom-card-width">
+                 <div class="card-body">
+                     <img src="E:\TaPay app\img\android.png" width="100px" height="150px" class="card-img-top" alt="...">
+                     <h5  style="text-align: center;"class="card-title">Android</h5>
+                     <a href="https://stoplight.io" class="btn btn-primary">View here...</a>
+                  </div>
+              </div>
+          </div>
+       </div>
+   </div><br>
+           <p style="text-align: center;">Want a package for your favorite language? <a href="E:\TaPay app\help.html">Let us know</a> and we'll see if we can make that happen.</p>
+           <br><br><br>
+           <div class="container">
+            <div class="row mb-xl">
+              <div class="col-md-12 center">
+                <br><br><br><br>
+                <h2 class="h2-header">Companies Partnered...</h2>
+                <div class="divider divider-primary divider-xsml divider-small-center">
+                  <hr>
+                </div>
+                <hr class="invisible">
+              </div>
+            </div>
+               <br><br>
+               <div class="row">		
+                   <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                      <a href="https://about.google/intl/ALL_in"><img src="E:\TaPay app\img\google.png" width="70px" height="90px" alt="Google" class="img-fluid"></a>
+                   </div>
+                   
+                   <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                      <a href="https://www.axisbank.com"><img src="E:\TaPay app\img\download.jpeg" width="70px" height="90px" alt="Axis Bank" class="img-fluid"></a>
+                   </div>
+                   
+                   <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                       <a href="https://www.billdesk.com/web"><img src="E:\TaPay app\img\bill.png" width="70px" height="90px" alt="Bill Desk" class="img-fluid"></a>
+                   </div>
+   
+                   <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                      <a href="https://payu.in"><img src="E:\TaPay app\img\payu.png" width="70px" height="100px" alt="PayU" class="img-fluid"></a>
+                   </div>
+               </div>
+           </div>
+   
+<br><br><br><br>
+      <footer class="footer">
+        <div class="container">
+            <p>
+        
+                <a href="E:\TaPay app\help.html">Help</a> & <a href="E:\TaPay app\contactus.html">Contact</a> |
+                <a href="E:\TaPay app\termsofservices.html">Terms of Service</a> | 
+                <a href="E:\TaPay app\privacypolicy.html">Privacy Policy</a>
+            </p>
+            <p>
+                &copy; 2024 Transaction Analysts India Private Limited. All Rights Reserved |
+                TaPay is a brand owned and operated by <a href="https://transactionanalysts.com">Transaction Analysts India Private Limited.</a>
+            </p>
+        </div>
+      </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>      
+     

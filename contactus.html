@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us & Content Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+          .navbar-nav {
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .navbar-nav .nav-item {
+       margin-right: 3rem;
+    }
+     .ws-nowrap {
+       white-space: nowrap;
+     }
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+            padding-top: 100px;
+        }
+
+        .contact-container {
+            display: flex;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+            height: 500px;
+            margin: 0 auto 40px; /* Margin for spacing below */
+        }
+
+        .contact-content {
+            padding: 40px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-image {
+            background-image: url('img/contactus.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 50%;
+            height: 100%;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .content-section {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto 40px; /* Center the content section and add margin */
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section h2 {
+            margin-top: 0;
+        }
+        .footer {
+            background-color: #6c757d; /* Grey background color */
+            color: white; /* Text color for readability */
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+        }
+        .footer h5 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .footer p {
+            margin: 0;
+            line-height: 1.6;
+        }
+        .footer .contact-info {
+            margin-top: 20px;
+        }
+        .footer .contact-info p {
+            margin: 5px 0;
+        }
+        .map-container {
+            margin-top: 20px;
+            height: 400px; 
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+   
+    <nav class="navbar" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"> 
+            <div class="container-fluid">
+                <a class="navbar-brand" href="E:\TaPay app\Tapay.in.html"><img src="img/t.png" style="width:200px;height:40px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="E:\TaPay app\consumer1.html">Consumer</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Merchant
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="E:\TaPay app\paymentgateway.html">Payment Gateway</a></li>
+                                <li><a class="dropdown-item" href="#">SaaS Operations</a></li>
+                                <li><a class="dropdown-item" href="#">Wallet services</a></li>
+                                <li><a class="dropdown-item" href="#">Security</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" aria-current="page" href="E:\TaPay app\dev.html">Developer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="E:\TaPay app\help.html">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="E:\TaPay app\contactus.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <a href="E:\TaPay app\login.html" class="btn btn-primary">Login</a>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <!-- Contact Container -->
+    <div class="contact-container">
+        <div class="contact-content">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or need further information, please don't hesitate to contact us. We're here to help you!</p>
+            
+            <div class="contact-details">
+                <p><strong>Email:</strong> support@transactionanalysts.com</p>
+                <p><strong>Phone:</strong> +91-9916788345</p>
+                <p><strong>Office Address:</strong> Transaction Analysts India Pvt Ltd
+                    #4 , Sathyam Arcade 1st Floor , 1 st Phase
+                    BTM Layout , 2nd Stage, Bangalore – 560076 , India.</p>
+            </div>
+        </div>
+        <div class="contact-image"></div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-section">
+        <h2>Contact Us</h2>
+        <h4>We are always happy to help.</h4>
+        <p>
+            Contact us for your Payment System needs. Whether it is Digital Wallets or Aadhaar Services or ATM/POS monitoring or Card Processing Services or Advisory /Audit Services on the Payment Industry, we are just a call away.
+        </p>
+        <p>
+            Feel free to explore our website and discover all the amazing features we have to offer...
+        </p>
+    </div>
+    <br>
+    
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234567.8901234567!2d-0.12345678901234!3d0.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMjM1IHN0cmVldCwgQ2l0eSwgU3RhdGUsIENvdW50cnk!5e0!3m2!1sen!2sin!4v1234567890123" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <br><br><br>
+
+    <footer class="footer">
+        <h5 style="color:black">Transaction Analysts India Private Limited</h5>
+        <p>Transaction Analysts India Private Limited is authorised by the Reserve Bank of India for issuance and operation of semi-closed prepaid payment instruments in India.</p>
+        <p>Wallet application is designed, developed, owned, and maintained by us.</p>
+        <p>We carry out "KYC" process of customers as per RBI master directions.</p>
+        
+        <div class="contact-info">
+            <h5 style="color:black">Nodal Officers & Contact Information</h5>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> contact@transactionanalysts.in</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Address:</strong> 1234 Main Street, City, State, Country</p>
+        </div>
+    </footer>
+
+</body>
+</html>
