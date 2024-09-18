@@ -6,16 +6,21 @@
     <title>Consumer Page with Scrolling Background</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-         .navbar-nav {
-            display: flex;
-            flex-wrap: wrap;
+        .navbar {
+            background-color: rgb(8, 94, 8); /* Green background for navbar */
         }
-         .navbar-nav .nav-item {
-            margin-right: 2rem;
+
+        .navbar-nav .nav-link,
+        .navbar-nav .nav-link:hover,
+        .navbar-brand {
+            color: white; /* White text color */
+            text-decoration: none; /* Remove underline */
         }
-        .ws-nowrap {
-            white-space: nowrap;
+
+        .navbar-nav .nav-link {
+            color: white; /* Ensures text color is white */
         }
+
         body {
             margin: 0;
             padding: 0;
@@ -70,51 +75,59 @@
             background-size: cover;
             background-position: center;
         }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar" data-bs-theme="dark">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"> 
-            <div class="container-fluid">
-                <a class="navbar-brand" href="E:\TaPay app\Tapay.in.html"><img src="img/t.png" style="width:200px;height:40px;"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="E:\TaPay app\consumer1.html">Consumer</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Merchant
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="E:\TaPay app\paymentgateway.html">Payment Gateway</a></li>
-                                <li><a class="dropdown-item" href="#">SaaS Operations</a></li>
-                                <li><a class="dropdown-item" href="#">Wallet services</a></li>
-                                <li><a class="dropdown-item" href="#">Security</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active" aria-current="page" href="E:\TaPay app\dev.html">Developer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="E:\TaPay app\help.html">Help</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="E:\TaPay app\contactus.html">Contact us</a>
-                        </li>
-                    </ul>
-                    <div class="search-container">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <a href="#" class="btn btn-primary">Search</a>
-                        </form>
-                    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Tapay.in.html">
+                <img src="img/ta_logo.png" style="width:60px;height:40px;">
+                <span class="ms-2" style="font-size: 1.5rem;">Transaction Analysts</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="E:\TaPay app\consumer1.html" style="color: aliceblue;">Consumer</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: aliceblue;">
+                            Merchant
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="E:\TaPay app\paymentgateway.html">Payment Gateway</a></li>
+                            <li><a class="dropdown-item" href="#">SaaS Operations</a></li>
+                            <li><a class="dropdown-item" href="#">Wallet services</a></li>
+                            <li><a class="dropdown-item" href="#">Security</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" aria-current="page" href="dev.html" style="color: aliceblue;">Developer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="help.html" style="color: aliceblue;">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="E:\TaPay app\contactus.html" style="color: aliceblue;">Contact us</a>
+                    </li>
+                </ul>
+                <div class="search-container">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <a href="#" class="btn btn-primary">Search</a>
+                    </form>
                 </div>
             </div>
-        </nav>
+        </div>
     </nav>
     <!-- Content Section 1 -->
     <section>
@@ -148,7 +161,8 @@
             <p>Our refund process is simple. Merchant can initiate refund with a simple click. Funds are pushed back into the account which was used to make the payment.</p>
         </div>
         <div class="info-image" style="background-image: url('img/your-image3.jpg');"></div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,44 @@
+/* General Styles */
+body {
+    padding-top: 60px;
+}
+
+h1, h2, h5 {
+    font-family: 'Arial', sans-serif;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar-brand img {
+    max-height: 40px;
+}
+
+/* Cards */
+.card {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.card:hover {
+    border-color: turquoise;
+}
+
+/* Main Banner */
+.content {
+    padding: 0;
+    margin: 0;
+}
