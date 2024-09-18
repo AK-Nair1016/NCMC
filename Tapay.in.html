@@ -1,396 +1,340 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Transaction Analysts - NCMC Information</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
     <style>
-     .navbar {
-    height: 60px;
-    background-color:rgb(8, 91, 8) !important;
-}
-
-     /* .search-container {
-        
-        margin-left: auto; 
-      }*/
-      body .content {    
-        padding: 0;
-        margin: 0;
-        background-image: url('img/background-1.jpg'); 
-        background-size: 100%; 
-        background-position: center; 
-        background-attachment: fixed; 
-        background-repeat: no-repeat;
-        color: white;
-    
-      }
-      .container-fluid {
-       
-        max-width: 100%; 
-     }
-      .navbar-nav {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .navbar-nav .nav-item {
-        margin-right: 3rem;
-      }
-      .ws-nowrap {
-        white-space: nowrap;
-      }
-      .content {
-            padding: 20px; 
+        .navbar {
+            height: 60px;
+            background-color: rgb(8, 91, 8) !important;
+            transition: background-color 0.3s ease;
         }
-      .card-img-top {
-            display: block; 
-            margin-left: auto;
-            margin-right: auto; 
-            max-width: 20%; 
-            height: auto; 
-        }
-        .card {
-            border: 2px solid transparent; 
-            border-radius: 10px; 
-            transition: border-color 0.3s ease; 
-        }
-        .card:hover {
-            border-color:turquoise; 
-        }
-        .card-body {
-            padding: 1.25rem; 
-        }
-      .carousel-slide{
-        display: block; 
-        border-radius: 10px;
-        margin-left: auto; 
-        margin-right: auto;
-         max-width: 30%;
-      }
-      .carousel-inner img {
-        border-radius: 10px;
-      }
-      .top-carousel{
-        background-color: aqua;
-        border-radius: 20px;
-        width:auto;
-        height: 50px;
-        
-      }
-      .feature-container {
-        width: 25%; 
-        padding: 15px; 
-      }
 
-.feature-content {
-    padding-left: 0; 
-}
+        .navbar.scrolled {
+            background-color: rgb(5, 75, 5) !important;
+        }
 
-.feature-title {
-    font-size: 1.25em; 
-    margin-top: 10px;
-}
-.container{
-  text-align:center;
-  
-}
-.position-relative{
-  text-align: start;
-}
-.col-md-12{
-  border-radius: 20px;
-    background-color:rgb(24, 153, 196); 
-    padding: 30px; 
-    text-align: center; 
-}
+        .hero-section {
+            background-image: url('img/background-1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 600px; /* Height of the section with the background image */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
 
-.image-wrapper {
-    display: inline-block;
-}
+        .content {
+            background-color: white; /* Or any other color */
+            color: black; /* Adjust text color */
+            padding: 20px;
+        }
 
-.image-wrapper img {
-    width: 175px; 
-    height: 175px; 
-    object-fit: cover; 
-}
-.mt-xl{
-  color:white;
-}
-.clr-gld{
-  color:black;
-}
-.footer {
-            background-color: #f8f9fa;
+        .footer {
+            background-color: #112607;
             padding: 20px 0;
             text-align: center;
+            color: rgb(245, 239, 239);
         }
+        .h2-header {
+            text-align: center;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
         .footer a {
             color: #007bff;
             text-decoration: none;
         }
+
         .footer a:hover {
             text-decoration: underline;
         }
+
+        .footer .col-md-4 {
+            color: rgb(239, 224, 224);
+        }
+
+        .footer .col-md-4:nth-child(2) {
+            color: rgb(234, 230, 230);
+        }
+
+        .ncmc-section {
+            background-color: #d5d4d4;
+            padding: 60px 20px;
+            color: black;
+        }
+
+        .ncmc-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .ncmc-feature {
+            margin-bottom: 20px;
+        }
+
+        .ncmc-feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .ncmc-feature p {
+            font-size: 1rem;
+        }
+
+        .card-img-top {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 20%;
+            height: auto;
+        }
+
+        .card {
+            border: 2px solid transparent;
+            border-radius: 10px;
+            transition: border-color 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: turquoise;
+        }
+
+        .card-body {
+            padding: 1.25rem;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"> 
-      <div class="container-fluid">
-        <a class="navbar-brand" href="Tapay.in.html"><img src="img\ta_logo.png" style="width:60px;height:40px;">
-        <span class="ms-2" style="color: white; font-size: 1.5rem; font-size: 1.5rem;">Transaction Analysts</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="consumer1.html">Consumer</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Merchant
-              </a>
-              <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="paymentgateway.html">Payment Gateway</a></li>
-               <li><a class="dropdown-item" href="#">SaaS Operations</a></li>
-               <li><a class="dropdown-item" href="#">Wallet services</a></li>
-               <li><a class="dropdown-item" href="#">Security</a></li>
-              </ul>
-             </li>
-     
-
-
-
-            <li class="nav-item dropdown">
-               <a class="nav-link active" aria-current="page" href="dev.html">
-                Developer
-               </a>
-               
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="help.html">Help</a>
-            </li>
-
-            <li style="color: aliceblue;"> 
-               <a class="nav-link active" aria-current="page" href="contactus.html">Contact us</a>
-            </li>
-          </ul>
-          <a href="login.html" class="btn" style="background-color: white; color: green; margin:5px;">Login</a>
-          <a href="signup.html" class="btn" style="background-color: white; color: green; margin: 5px;">SignUp</a>
-
-        
-      </div>
-      </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"> 
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Tapay.in.html">
+                    <img src="img/ta_logo.png" style="width:60px;height:40px;">
+                    <span class="ms-2" style="color: white; font-size: 1.5rem;">Transaction Analysts</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="consumer1.html">Consumer</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Merchant</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="paymentgateway.html">Payment Gateway</a></li>
+                                <li><a class="dropdown-item" href="rupay.html">SaaS Operations</a></li>
+                                <li><a class="dropdown-item" href="#">Wallet services</a></li>
+                                <li><a class="dropdown-item" href="#">Security</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" aria-current="page" href="dev.html">Developer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="help.html">Help</a>
+                        </li>
+                        <li style="color: aliceblue;"> 
+                            <a class="nav-link active" aria-current="page" href="contactus.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <a href="login.html" class="btn" style="background-color: white; color: green; margin:5px;">Login</a>
+                    <a href="signup.html" class="btn" style="background-color: white; color: green; margin: 5px;">SignUp</a>
+                </div>
+            </div>
+        </nav>
     </nav>
-  </nav>
-    </header>
-        
-       <main class="content">
-        <div style="height: 1500px;">
-          <h2 style="text-align:center;color:white;">Payments Made Easy...</h2>
+    
+    <main>
+        <section class="hero-section">
+            <h2>Payments Made Easy...</h2>
+        </section>
+
+        <div class="content">
+            <!-- NCMC Section -->
+            <section class="ncmc-section">
+                <div class="container">
+                    <h2>National Common Mobility Card (NCMC)</h2>
+                    <div class="row">
+                        <div class="col-md-4 ncmc-feature">
+                            <h3>What is NCMC?</h3>
+                            <p>The National Common Mobility Card (NCMC) is a unified payment card that simplifies travel and transactions across various modes of transport and services. It integrates multiple payment functions into one card for your convenience.</p>
+                        </div>
+                        <div class="col-md-4 ncmc-feature">
+                            <h3>How It Works</h3>
+                            <p>Use the NCMC to pay for public transport, retail purchases, and more. The card supports contactless payments and can be easily managed through our online portal.</p>
+                        </div>
+                        <div class="col-md-4 ncmc-feature">
+                            <h3>Benefits</h3>
+                            <p>Experience seamless travel and payment transactions with one card. Enjoy the ease of managing your payments and keeping track of your spending efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Existing Content... -->
+            <br><br><br>
+            <div class="container">
+              <div class="row mb-xl">
+                <div class="col-md-13 align-items">
+                  <h2 class="h2-header">Key Features</h2>
+                    <div class="divider divider-primary divider-xsml divider-small-center">
+                      <hr>
+                    </div>
+                  <hr class="invisible">
+                </div>
+              </div>
+            <div class="container">
+              <div class="row text-center">
+                  <div class="col-md-4 mb-3">
+                      <h4>Easy Integration</h4>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <h4>Buyer Protection</h4>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <h4>Authorization Holds</h4>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <h4>Pre-Common Service Area</h4>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <h4>Zero KYC</h4>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <h4>Offline Transaction</h4>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <h4>Easy Wallet Handling</h4>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <h4>Recharge and Balance Management</h4>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <h4>Financial Security</h4>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <h4>Interoperability</h4>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <h4>Contactless Payment</h4>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <h4>PCI-DSS Certified</h4>
+                  </div>
+              </div>
+          </div>
+          
+          <br><br>
+          <section class="call-to-action call-to-action-primary call-to-action-front">
+            <div class="container pd-btm">
+              <div class="row pd-btm">
+                <div class="ml-none center pd-btm"></div> 
+              </div>
+            </div>
+          </section>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card text-center">
+                        <img src="img/Payment-Gateway.png" class="card-img-top" alt="Payment Gateway">
+                        <div class="card-body">
+                            <h5 class="card-title">Payment Gateway</h5>
+                            <p class="card-text">Integrate your website or mobile app with our state of the art Payment Gateway. For those not so tech savvy, our easy-to-integrate TraknPay System is a breeze.
+                            <br><br>
+                            <a href="paymentgateway.html" class="btn btn-primary">Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"> 
+                    <div class="card text-center">
+                        <img src="img/saas.png" class="card-img-top" alt="rupay">
+                        <div class="card-body">
+                            <h5 class="card-title">Rupay</h5>
+                            <p class="card-text">RuPay is India’s domestic card payment network developed by the National Payments Corporation of India (NPCI), providing a secure and efficient alternative to international card networks. It facilitates electronic transactions across a wide range of services, promoting financial inclusion and enhancing payment convenience.
+                            <br><br>
+                            <a href="rupay.html" class="btn btn-primary">Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <img src="img/walletservice.png" class="card-img-top" alt="Wallet Services">
+                        <div class="card-body">
+                            <h5 class="card-title">TAWallet Services</h5>
+                            <p class="card-text">Our wallet services offer a seamless way to manage your payments and transactions. Easy to use and secure, our digital wallet solution ensures that your financial transactions are always at your fingertips.
+                            <br><br>
+                            <a href="#" class="btn btn-primary">Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card text-center">
-          <img src="img\Payment-Gateway.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Payment Gateway</h5>
-            <p class="card-text">Integrate your website or mobile app with our state of the art Payment Gateway. For those not so tech savvy, our easy-to-integrate TraknPay Lite comes in handy
-            <br><br><a href="#" class="btn btn-primary">Learn more...</a>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>
+                        Transaction Analysts India Private Limited is authorised by Reserve Bank of India for issuance and operation of semi-closed prepaid payment instruments in India.<br>
+                        Wallet application is designed, developed, owned and maintained by us.<br>
+                        We carry out "KYC" process of customers as per RBI master directions.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <strong>Nodal Officers</strong><br>
+                        Nodal Officer 1: Mrs. Ramashivshakar<br>
+                        Mobile: +91 9819683650<br>
+                        Email: <a href="mailto:rama.s@taipl.in">rama.s@taipl.in</a><br>
+                        Nodal Officer 2: Mr. Siddhartha Desu<br>
+                        Mobile: +91 8123910785<br>
+                        Email: <a href="mailto:siddhartha.d@taipl.in">siddhartha.d@taipl.in</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <strong>Contact Information</strong><br>
+                        (India) (L): +91-80-26784479<br>
+                        (India) (M): +91-9916788345<br>
+                        Email: <a href="mailto:support@transactionanalysts.com">support@transactionanalysts.com</a>
+                    </p>
+                </div>
+            </div>
+            <p style="text-align: center; color: rgb(213, 210, 210);">
+              <a href="help.html">Help </a>& <a href="contactus.html">Contact</a> | 
+              <a href="termsofservices.html">Terms of Service</a> | 
+              <a href="privacypolicy.html">Privacy Policy</a>
+            </p>
+            <p style="text-align: center; color: rgb(214, 211, 211);">
+              &copy; 2024 Transaction Analysts India Private Limited. All Rights Reserved |
+              TaPay is a brand owned and operated by <a href="https://transactionanalysts.com">Transaction Analysts India Private Limited.</a>
             </p>
           </div>
+  
         </div>
-      </div>
-      <div class="col">
-        <div class="card text-center">
-          <img src="img\saas.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">SaaS Offerings</h5>
-            <p class="card-text">Our SaaS based Payment collection software, helps you receive and track payments in real-time. Customers have a range of payment options to choose from</p>
-            <br><a href="#" class="btn btn-primary">Learn more...</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card text-center">
-          <img src="img\walletservice.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Wallet Service</h5>
-            <p class="card-text">Our white label wallet service enables Businesses have their own self branded wallet. Merchants can provide instant cashbacks, refunds, loyalty coupons etc.</p>
-            <br><a href="#" class="btn btn-primary">Learn more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <br><br>
-    <div class="top-carousel">
-      <h2>A sophisticated Online Payments Platform designed and built for tomorrow</h2>
-    </div>
+    </footer>
 
-    <div id="carouselExampleAutoplaying" class="carousel-slide" data-bs-ride="carousel">
-     
-      <div class="carousel-inner">
-
-        <div class="carousel-item active">
-          <a href="img\Online-Payments.png"><img src="img\Online-Payments.png" class="d-block w-100" alt="..."></a>
-        </div>
-        <div class="carousel-item">
-          <a href="img\ECS-NACH.png"><img src="img\ECS-NACH.png" class="d-block w-100" alt="..."></a>
-        </div>
-        <div class="carousel-item">
-          <a href="img\Payment-Options.png"><img src="img\Payment-Options.png" class="d-block w-100" alt="..."></a>
-        </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    </div>
-  </div>
-    <br><br>
-
-    <div class="bottom text-center">
-      <div class="bg-success p-2 text-white"><h3 style="text-align: center;">Start collecting payments</h3></div>
-  <div class="bg-success p-2 text-white bg-opacity-75"><h4 style="text-align: center;">through your website</h4></div>
-  <div class="bg-success p-2 text-dark bg-opacity-50"><h5 style="text-align: center;"> our SaaS offerings</h5>
-  <br>
-  <a href="paymentgateway.html" class="btn btn-primary">Learn more</a>
-  </div>
-
-<br><br><br>
-<div class="container">
-  <div class="row mb-xl">
-    <div class="col-md-13 center">
-      <h2 class="h2-header">   Key Features </h2>
-        <div class="divider divider-primary divider-xsml divider-small-center">
-          <hr>
-        </div>
-      <hr class="invisible">
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row text-center">
-        <div class="col-md-4 mb-3">
-            <h4>Easy Integration</h4>
-        </div>
-        <div class="col-md-4 mb-3">
-            <h4>Buyer Protection</h4>
-        </div>
-        <div class="col-md-4 mb-3">
-            <h4>Authorization Holds</h4>
-        </div>
-        <div class="col-md-4 mb-3">
-            <h4>Split Settlements</h4>
-        </div>
-        <div class="col-md-4 mb-3">
-            <h4>Quick Refunds</h4>
-        </div>
-        <div class="col-md-4 mb-3">
-            <h4>Online Invoicing</h4>
-        </div>
-        <div class="col-md-4 mb-3">
-            <h4>Payment Challans</h4>
-        </div>
-        <div class="col-md-4 mb-3">
-            <h4>Recurring Billing</h4>
-        </div>
-        <div class="col-md-4 mb-3">
-            <h4>White Label Wallet</h4>
-        </div>
-        <div class="col-md-4 mb-3">
-            <h4>Pre-paid TDR</h4>
-        </div>
-        <div class="col-md-4 mb-3">
-            <h4>Rich Dashboard</h4>
-        </div>
-        <div class="col-md-4 mb-3">
-            <h4>PCI-DSS Certified</h4>
-        </div>
-    </div>
-</div>
-
-<br><br>
-<section class="call-to-action call-to-action-primary call-to-action-front  ">
-  <div class="container pd-btm">
-    <div class="row pd-btm">
-   
-        <div class=" ml-none center  pd-btm">	
-
-        <div class="col-md-12 center pd-btm-xl mg-small"  >
-            <img   alt="Transformation" width="175" height="175" src="img\Transformation.png">
-            <br><br>
-            <h2 class="text-color-light mb-none mt-xl h2-divider">Transform your Business. Switch to new forms of Payment collection.<br><span class="clr-gld"> It’s hassle-free, safe and secure</span></h2>
-        </div>     
-      </div> 
-    </div>
-  </div>
-</section>
-
-<br><br>
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card text-center">
-      <img src="img\fast settle.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Fastest Settlements</h5>
-        <p class="card-text">Our sophisticated settlements algorithm will ensure that you receive funds at the earliest
-        <br><br><a href="#" class="btn btn-primary">Learn more...</a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card text-center">
-      <img src="img\kyc.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Quick Onboarding</h5>
-        <p class="card-text">Onboarding is plain and simple. Upload your KYC. Get approval. Start collecting Payments</p>
-        <br><a href="#" class="btn btn-primary">Learn more...</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card text-center">
-      <img src="img\zerorisk.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Zero Risk</h5>
-        <p class="card-text">Our state of the art Infrastructure and fraud prevention systems are designed to protect you</p>
-        <br><a href="#" class="btn btn-primary">Learn more</a>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<footer class="footer">
-  <div class="container">
-      <p>
-        <br><br><br><br><br><br>
-          <a href="help.html">Help </a>& <a href="contactus.html">Contact</a> | 
-          <a href="termsofservices.html">Terms of Service</a> | 
-          <a href="privacypolicy.html">Privacy Policy</a>
-      </p>
-      <p>
-          &copy; 2024 Transaction Analysts India Private Limited. All Rights Reserved |
-          TaPay is a brand owned and operated by <a href="https://transactionanalysts.com">Transaction Analysts India Private Limited.</a>
-      </p>
-  </div>
-</footer>
-
-  </body>
+    <script>
+        // Change navbar background color on scroll
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
 </html>
