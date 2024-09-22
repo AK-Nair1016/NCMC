@@ -7,6 +7,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+          .navbar {
+            height: 60px;
+            background-color: rgb(8, 91, 8) !important;
+            transition: background-color 0.3s ease;
+        }
       .navbar-nav {
         display: flex;
         flex-wrap: wrap;
@@ -14,6 +19,14 @@
       .navbar-nav .nav-item {
         margin-right: 3rem;
       }
+      .footer-custom {
+        background-color: #2a2b29 !important;/* Change this to any color you want */
+        color: white !important; /* Change text color if needed */
+        padding: 20px;
+        text-align: center;
+      }
+</style>
+
     </style>
 </head>
 <body>
@@ -22,7 +35,9 @@
 <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"> 
       <div class="container-fluid">
-          <a class="navbar-brand" href="E:\TaPay app\Tapay.in.html"><img src="img/t.png" style="width:200px;height:40px;"></a>
+          <a class="navbar-brand" href="Tapay.in.html"><img src="img/ta_logo.png" style="width:60px;height:40px;">
+             <span class="ms-2" style="color: white; font-size: 1.5rem;">Transaction Analysts</span>
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
@@ -52,12 +67,12 @@
                       <a class="nav-link active" href="https://transactionanalysts.com/contact-us">Contact us</a>
                   </li>
               </ul>
-              <div class="search-container">
+              <!--div class="search-container">
                   <form class="d-flex" role="search">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                       <a href="#" class="btn btn-primary">Search</a>
                   </form>
-              </div>
+              </div-->
           </div>
       </div>
   </nav>
@@ -95,10 +110,10 @@
 
 <!-- Footer -->
  <br><br><br>
-<footer class="bg-light text-center text-lg-start">
+ <footer class="footer-custom text-center text-lg-start">
   <div class="text-center p-3">
     © 2024 [Transaction Analysts India Private limited]. All rights reserved.
-    <a class="text-dark" href="E:\TaPay app\privacypolicy.html">Privacy Policy</a>
+    <a class="text-dark" href="privacypolicy.html">Privacy Policy</a>
   </div>
 </footer>
 

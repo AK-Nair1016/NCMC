@@ -6,82 +6,168 @@
     <title>RuPay and NCMC</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-      body {
-        background-color: #f8f9fa;
-      }
-      .navbar {
-            height: 60px;
-            background-color: rgb(8, 91, 8) !important;
-        }
-      .header {
-        background-color: rgb(8, 92, 8); /* Updated header color */
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-      .content {
-        padding: 20px;
-      }
-      .section {
-        margin-bottom: 20px;
-      }
-      .footer {
-        background-color: #343a40;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-      .footer a {
-        color: #f8f9fa;
-        text-decoration: none;
-      }
-      .footer a:hover {
-        text-decoration: underline;
-      }
+       body {
+      background-color: #f8f9fa;
+      margin: 0;
+  }
+  
+  .navbar {
+      height: 60px; /* Adjusted height */
+      background-color: rgb(8, 91, 8) !important;
+      transition: background-color 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+      background-color: rgb(5, 75, 5) !important;
+  }
+  
+  .hero-section {
+      background-image: url('img/background-1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 600px; /* Height of the section with the background image */
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .content {
+      background-color: white; /* Or any other color */
+      color: black; /* Adjust text color */
+      padding: 20px;
+  }
+  
+  .footer {
+      background-color: #2a2b29;
+      padding: 20px 0;
+      text-align: center;
+      color: rgb(245, 239, 239);
+  }
+  
+  .h2-header {
+      text-align: center;
+      margin: 0 auto;
+      padding: 20px 0;
+  }
+  
+  .footer a {
+      color: #007bff;
+      text-decoration: none;
+  }
+  
+  .footer a:hover {
+      text-decoration: underline;
+  }
+  
+  .ncmc-section {
+      background-color: #d5d4d4;
+      padding: 60px 20px;
+      color: black;
+  }
+  
+  .ncmc-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+  }
+  
+  .ncmc-feature {
+      margin-bottom: 20px;
+  }
+  
+  .ncmc-feature h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+  }
+  
+  .ncmc-feature p {
+      font-size: 1rem;
+  }
+  
+  .card-img-top {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 20%;
+      height: auto;
+  }
+  
+  .card {
+      border: 2px solid transparent;
+      border-radius: 10px;
+      transition: border-color 0.3s ease;
+  }
+  
+  .card:hover {
+      border-color: turquoise;
+  }
+  
+  .card-body {
+      padding: 1.25rem;
+  }
+  
+  /* Adjust navbar brand and link styles */
+  .navbar-brand img {
+      width: 60px;
+      height: 40px;
+  }
+  
+  .nav-link {
+      font-size: 1rem; /* Adjust font size */
+  }
+  
+  .btn {
+      background-color: white;
+      color: green;
+      margin: 5px;
+  }
     </style>
-  </head>
+    </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"> 
-            <div class="container-fluid">
-                <a class="navbar-brand" href="Tapay.in.html">
-                    <img src="img/ta_logo.png" style="width:60px;height:40px;">
-                    <span class="ms-2" style="color: white; font-size: 1.5rem;">Transaction Analysts</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="consumer1.html">Consumer</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Merchant</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="paymentgateway.html">Payment Gateway</a></li>
-                                <li><a class="dropdown-item" href="rupay.html">SaaS Operations</a></li>
-                                <li><a class="dropdown-item" href="#">Wallet services</a></li>
-                                <li><a class="dropdown-item" href="#">Security</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active" aria-current="page" href="dev.html">Developer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="help.html">Help</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="contactus.html">Contact us</a>
-                        </li>
-                    </ul>
-                    <a href="login.html" class="btn" style="background-color: white; color: green; margin:5px;">Login</a>
-                    <a href="signup.html" class="btn" style="background-color: white; color: green; margin: 5px;">SignUp</a>
-                </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Tapay.in.html">
+                <img src="img/ta_logo.png" style="width:60px;height:40px;">
+                <span class="ms-2" style="color: white; font-size: 1.2rem;">Transaction Analysts</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="consumer1.html">Consumer</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Merchant</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="paymentgateway.html">Payment Gateway</a></li>
+                            <li><a class="dropdown-item" href="rupay.html">SaaS Operations</a></li>
+                            <li><a class="dropdown-item" href="#">Wallet services</a></li>
+                            <li><a class="dropdown-item" href="#">Security</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" aria-current="page" href="dev.html">Developer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="help.html">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contactus.html">Contact us</a>
+                    </li>
+                </ul>
+                <a href="login.html" class="btn" style="background-color: white; color: green; margin: 0 5px; padding: 5px 10px;">Login</a>
+                <a href="signup.html" class="btn" style="background-color: white; color: green; margin: 0 5px; padding: 5px 10px;">SignUp</a>
             </div>
-        </nav>
+        </div>
+    </nav>
+    
     </nav>
 
     <header class="header">
